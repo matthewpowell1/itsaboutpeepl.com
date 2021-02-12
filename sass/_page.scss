@@ -1,0 +1,51 @@
+.page-template-layout-no-page-title {
+    .entry-header {
+        display: none;
+    }
+
+    .entry-content {
+        margin-top: 0 !important;
+    }
+
+    .site-main {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
+
+// For inside the editor interface.
+.wp-block[data-align="full"] {
+    .wp-block-group.is-style-twentytwentyone-border {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+}
+
+// On the real page.
+.alignfull.is-style-twentytwentyone-border {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-width: 1px 0;
+}
+
+// If we’ve gone to the hassle of putting something inside of an alignwide
+// block group, then it’s probably a sign that we don’t need to constrain
+// the content to a narrow strip down the middle of the page.
+.wp-block-group.alignwide > .wp-block-group__inner-container {
+    & > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {
+        max-width: none;
+    }
+}
+
+.entry-content > .wp-block-group {
+    @media (min-width: $screen-md-min) {
+        padding: calc(1.5 * var(--global--spacing-vertical)) 0 !important;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        padding: calc(2 * var(--global--spacing-vertical)) 0 !important;
+    }
+}
+
+// Just the edit post link, which we don’t need.
+.entry-footer {
+    display: none;
+}

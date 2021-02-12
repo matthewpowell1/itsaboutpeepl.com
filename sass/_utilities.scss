@@ -1,0 +1,136 @@
+.rounded {
+    border-radius: $border-radius !important;
+}
+
+.rounded-sm {
+    border-radius: $border-radius-sm !important;
+}
+
+.rounded-lg {
+    border-radius: $border-radius-lg !important;
+}
+
+figure.rounded {
+    border-radius: none !important;
+
+    img {
+        border-radius: $border-radius !important;
+    }
+}
+
+figure.rounded-sm {
+    border-radius: none !important;
+
+    img {
+        border-radius: $border-radius-sm !important;
+    }
+}
+
+figure.rounded-lg {
+    border-radius: none !important;
+
+    img {
+        border-radius: $border-radius-lg !important;
+    }
+}
+
+.shadow {
+    box-shadow: $box-shadow !important;
+}
+
+.shadow-sm {
+    box-shadow: $box-shadow-sm !important;
+}
+
+.shadow-lg {
+    box-shadow: $box-shadow-lg !important;
+}
+
+figure.shadow {
+    box-shadow: none !important;
+
+    img {
+        box-shadow: $box-shadow !important;
+    }
+}
+
+figure.shadow-sm {
+    box-shadow: none !important;
+
+    img {
+        box-shadow: $box-shadow-sm !important;
+    }
+}
+
+figure.shadow-lg {
+    box-shadow: none !important;
+
+    img {
+        box-shadow: $box-shadow-lg !important;
+    }
+}
+
+.p0 {
+    padding: 0 !important;
+}
+
+.m0 {
+    margin: 0 !important;
+}
+
+.my-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.mx-0 {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.py-0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.px-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+$directions: (
+    "t": "top",
+    "r": "right",
+    "b": "bottom",
+    "l": "left",
+);
+
+@each $initial, $direction in $directions {
+    .m#{$initial}-0 {
+        margin-#{$direction}: 0 !important;
+    }
+
+    .p#{$initial}-0 {
+        padding-#{$direction}: 0 !important;
+    }
+}
+
+.wp-block-cover.pb-0 .wp-block-cover__inner-container {
+    margin-bottom: 0;
+}
+
+@for $i from -5 through 5 {
+    $slug: $i;
+
+    @if $i < 0 {
+        $slug: "n#{$i * -1}"
+    }
+
+    .rotate-#{$slug} {
+        transform: rotate(#{$i}deg) !important;
+    }
+}
+
+.rotate-0 {
+    transform: rotate(0deg) !important;
+}

@@ -1,0 +1,25 @@
+:root {
+    @each $slug, $color in $peepl-colors {
+        --global--color-#{$slug}: #{$color};
+    }
+
+    --global--color-primary: var(--global--color-dark-gray);
+    --global--color-secondary: var(--global--color-taupe);
+    --global--color-background: var(--global--color-cream);
+}
+
+@each $slug, $color in $peepl-colors {
+    .has-#{$slug}-color[class] {
+        color: var(--global--color-#{$slug});
+    }
+
+    .has-#{$slug}-background-color[class] {
+        background-color: var(--global--color-#{$slug});
+    }
+}
+
+@each $slug, $background in $peepl-gradients {
+    .has-#{$slug}-gradient-background {
+        background: $background;
+    }
+}

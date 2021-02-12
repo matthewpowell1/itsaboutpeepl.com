@@ -1,0 +1,44 @@
+:root {
+    --button--color-background: var(--global--color-red);
+    --button--color-text-hover: var(--global--color-white);
+}
+
+.wp-block-button:not(.is-style-outline) {
+    .wp-block-button__link {
+        border: none !important;
+        transition: box-shadow 100ms linear, transform 100ms linear;
+
+        &:hover {
+            background: var(--global--color-red) !important;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transform: translate(0, -2px);
+        }
+
+        @each $slug, $color in $peepl-colors {
+            &.has-#{$slug}-background-color[class]:hover {
+                background-color: var(--global--color-#{$slug}) !important;
+            }
+
+            &.has-white-background-color.has-#{$slug}-color:hover {
+                color: var(--global--color-#{$slug}) !important;
+            }
+        }
+
+        @each $slug, $background in $peepl-gradients {
+            &.has-#{$slug}-gradient-background:hover {
+                background: $background !important;
+            }
+        }
+    }
+}
+
+.wp-block-button.is-style-outline {
+    .wp-block-button__link {
+        @each $slug, $color in $peepl-colors {
+            &.has-#{$slug}-color:hover {
+                background-color: var(--global--color-#{$slug}) !important;
+                border-color: var(--global--color-#{$slug}) !important;
+            }
+        }
+    }
+}

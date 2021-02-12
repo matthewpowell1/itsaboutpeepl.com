@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+SCRIPTDIR="$(dirname $0)"
+
+cd "$SCRIPTDIR/.."
+
+script/update
+
+rsync --verbose --compress --update --delete --recursive --group --times --progress --omit-dir-times --no-perms "peepl-wordpress" "itsaboutpeepl.com:/home/ubuntu"

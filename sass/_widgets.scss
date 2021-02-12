@@ -1,0 +1,7 @@
+.widget-area {
+    margin-top: 0;
+
+    @media (min-width: $screen-xl-min) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

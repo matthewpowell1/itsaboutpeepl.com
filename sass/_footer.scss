@@ -1,0 +1,16 @@
+.site-footer {
+    .site-logo .custom-logo {
+        max-width: var(--branding--logo--max-width-mobile) !important;
+        max-height: var(--branding--logo--max-height-mobile) !important;
+        filter: grayscale(1);
+    }
+}
+
+.footer-navigation {
+    margin: 0;
+    margin-left: auto;
+}
+
+.footer-navigation-wrapper {
+    justify-content: flex-start;
+}

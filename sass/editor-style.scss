@@ -1,0 +1,13 @@
+// Note! WordPress does some icky stuff with the editor stylesheet:
+// 1. If a "body" selector exists, it will be replaced with ".editor-styles-wrapper".
+// 2. All other selectors will have ".editor-styles-wrapper" prepended to them.
+// https://developer.wordpress.org/block-editor/developers/themes/theme-support/#editor-styles
+
+@import "variables";
+
+@import "colors";
+@import "type";
+@import "buttons";
+@import "column";
+@import "page";
+@import "utilities";

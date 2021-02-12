@@ -1,0 +1,9 @@
+.wp-block-column:not(:first-child) {
+    @media (min-width: $screen-xl-min) {
+        margin-left: 3em;
+    }
+
+    @media (min-width: $screen-xxl-min) {
+        margin-left: 4em;
+    }
+}

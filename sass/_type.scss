@@ -1,0 +1,17 @@
+:root {
+    --font-base: "Lato", Arial, sans-serif;
+    --font-headings: "Montserrat", Arial, sans-serif;
+
+    --heading--font-weight: 600;
+    --heading--font-weight-page-title: 600;
+    --heading--font-weight-strong: 600;
+
+    @media only screen and (min-width: 652px) {
+        --global--font-size-xxl: 4rem !important;
+        --global--font-size-xxxl: 6rem !important;
+    }
+}
+
+.wp-block.editor-post-title__block .editor-post-title__input {
+    color: var(--global--color-primary);
+}

@@ -1,0 +1,45 @@
+:root {
+    --branding--logo--max-width: 256px;
+    --branding--logo--max-height: 80px;
+    --branding--logo--max-width-mobile: 64px;
+    --branding--logo--max-height-mobile: 64px;
+
+    --primary-nav--font-family: var(--global--font-primary);
+    --primary-nav--font-family-mobile: var(--global--font-primary);
+}
+
+.custom-logo-link:focus {
+    background-color: transparent !important;
+}
+
+.site-header {
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+
+    @media (min-width: $screen-sm-min) {
+        padding-top: var(--global--spacing-vertical) !important;
+        padding-bottom: var(--global--spacing-vertical) !important;
+    }
+}
+
+.site-branding {
+    margin-top: 0 !important;
+}
+
+.site-logo {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+
+    @media (max-width: $screen-xs-max) {
+        position: static !important;
+        padding: 0 !important;
+    }
+}
+
+.menu-button-container {
+    padding: 7px 0 !important;
+
+    button:focus {
+        color: var(--primary-nav--color-link) !important;
+    }
+}
