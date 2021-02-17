@@ -13,7 +13,7 @@
 figure.rounded {
     border-radius: none !important;
 
-    img {
+    img, iframe {
         border-radius: $border-radius !important;
     }
 }
@@ -21,7 +21,7 @@ figure.rounded {
 figure.rounded-sm {
     border-radius: none !important;
 
-    img {
+    img, iframe {
         border-radius: $border-radius-sm !important;
     }
 }
@@ -29,7 +29,7 @@ figure.rounded-sm {
 figure.rounded-lg {
     border-radius: none !important;
 
-    img {
+    img, iframe {
         border-radius: $border-radius-lg !important;
     }
 }
@@ -49,7 +49,7 @@ figure.rounded-lg {
 figure.shadow {
     box-shadow: none !important;
 
-    img {
+    img, iframe {
         box-shadow: $box-shadow !important;
     }
 }
@@ -57,7 +57,7 @@ figure.shadow {
 figure.shadow-sm {
     box-shadow: none !important;
 
-    img {
+    img, iframe {
         box-shadow: $box-shadow-sm !important;
     }
 }
@@ -65,7 +65,7 @@ figure.shadow-sm {
 figure.shadow-lg {
     box-shadow: none !important;
 
-    img {
+    img, iframe {
         box-shadow: $box-shadow-lg !important;
     }
 }

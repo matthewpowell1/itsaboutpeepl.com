@@ -369,17 +369,17 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 
 figure.rounded {
   border-radius: none !important; }
-  figure.rounded img {
+  figure.rounded img, figure.rounded iframe {
     border-radius: 0.3rem !important; }
 
 figure.rounded-sm {
   border-radius: none !important; }
-  figure.rounded-sm img {
+  figure.rounded-sm img, figure.rounded-sm iframe {
     border-radius: 0.2rem !important; }
 
 figure.rounded-lg {
   border-radius: none !important; }
-  figure.rounded-lg img {
+  figure.rounded-lg img, figure.rounded-lg iframe {
     border-radius: 0.5rem !important; }
 
 .shadow {
@@ -393,17 +393,17 @@ figure.rounded-lg {
 
 figure.shadow {
   box-shadow: none !important; }
-  figure.shadow img {
+  figure.shadow img, figure.shadow iframe {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
 
 figure.shadow-sm {
   box-shadow: none !important; }
-  figure.shadow-sm img {
+  figure.shadow-sm img, figure.shadow-sm iframe {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
 
 figure.shadow-lg {
   box-shadow: none !important; }
-  figure.shadow-lg img {
+  figure.shadow-lg img, figure.shadow-lg iframe {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; }
 
 .p0 {
