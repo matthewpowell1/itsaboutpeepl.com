@@ -13,7 +13,7 @@ visibility: hidden;
 
 <div class="wp-block-cover alignfull has-background-dim has-background-gradient has-red-to-orange-gradient-background pb-0" style="min-height:400px;">
     <div class="wp-block-cover__inner-container">
-        <h2 class="alignfull has-text-align-center has-huge-font-size"><?php the_field('test_title'); ?></h2>
+        <h2 class="alignfull has-text-align-center has-huge-font-size"><?php the_field('header'); ?></h2>
     </div> 
 </div>
 
