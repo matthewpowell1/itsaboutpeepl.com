@@ -19,9 +19,9 @@ visibility: hidden;
 
 <div class="wp-block-group alignwide my-0 " style="padding-top:60px; padding-bottom: 60px;">
     <div class="wp-block-group__inner-container">
-            <h3 class="has-text-align-center">Fandisha Fridays</h3>
-            <?php the_field('fandisha_audio'); ?>
-            <p class="has-text-align-center"><?php the_field('fandisha_description'); ?></p>
+            <h3 class="has-text-align-center"><?php the_field('featured_restaurant') ?></h3>
+            <?php the_field('featured_restaurant_audio'); ?>
+            <p class="has-text-align-center"><?php the_field('featured_restaurant_description'); ?></p>
     </div>
 </div>
 
@@ -30,8 +30,8 @@ visibility: hidden;
             <figure class="wp-block-image size-full shadow-lg rounded">
             <img loading="lazy" width="900" height="720" src="<?php the_field('featured_art'); ?>" alt="" class="wp-image-244" sizes="(max-width: 600px) 100vw, 600px">
             </figure>
-            <h3 class="has-text-align-center">Untold Suffering by Samantha Furness @slfurnessart</h3>
-            <p class="has-text-align-center">It's all coming together, I think. Yeet. Perhaps.</p>
+            <h3 class="has-text-align-center"><?php the_field('featured_art_title'); ?></h3>
+            <p class="has-text-align-center"><?php the_field ('featured_art_text'); ?></p>
     </div>
 </div>
 
@@ -58,10 +58,10 @@ visibility: hidden;
 
 <div class="wp-block-group alignfull is-style-default has-white-background-color has-background">
     <div class="wp-block-group__inner-container">
-        <h3 class="has-text-align-center">Peepl Talk.</h3>
-        <p class="has-text-align-center">Some other shows from the folks at Peepl</p>
+        <h3 class="has-text-align-center"><?php the_field('featured_podcasts'); ?></h3>
+        <p class="has-text-align-center"><?php the_field('featured_podcasts_text'); ?></p>
         <h3 class="has-text-align-center"><?php the_field('podcast_1_title');?></h3>
-        <<?php the_field('podcast_1'); ?>
+        <?php the_field('podcast_1'); ?>
         <h3 class="has-text-align-center"><?php the_field('podcast_2_title');?></h3>
         <?php the_field('podcast_2'); ?>
     </div>
