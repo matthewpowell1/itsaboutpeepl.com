@@ -19,7 +19,7 @@ visibility: hidden;
 
 <?php 
 $featured_restaurant = get_field('featured_restaurant');
-if ( $featured_restaurant ): ?>
+if ( $featured_restaurant['title'] ): ?>
     <div class="wp-block-group alignwide my-0 " style="padding-top:60px; padding-bottom: 60px;">
         <div class="wp-block-group__inner-container">
                 <h3 class="has-text-align-center"><?php echo $featured_restaurant['title'] ?></h3>
@@ -31,7 +31,7 @@ if ( $featured_restaurant ): ?>
 
 <?php 
 $featured_art = get_field('featured_art');
-if ( $featured_art ): ?>
+if ( $featured_art['title'] ): ?>
     <div class="wp-block-group alignfull is-style-default has-white-background-color has-background">
         <div class="wp-block-group__inner-container">
                 <figure class="wp-block-image size-full shadow-lg rounded">
@@ -46,7 +46,7 @@ if ( $featured_art ): ?>
 
 <?php
 $featured_music = get_field('featured_music');
-if ( $featured_music ): ?>
+if ( $featured_music['title'] ): ?>
 <div class="wp-block-group alignfull my-0 " style="padding-top:60px; padding-bottom: 60px;">
     <div class="wp-block-group__inner-container">
         <div class="wp-block-columns alignwide">
@@ -71,7 +71,7 @@ if ( $featured_music ): ?>
 
 <?php
 $featured_podcasts = get_field('featured_podcasts');
-if ( $featured_podcasts ): ?>
+if ( $featured_podcasts['title'] ): ?>
 <div class="wp-block-group alignfull is-style-default has-white-background-color has-background">
     <div class="wp-block-group__inner-container">
         <h3 class="has-text-align-center"><?php echo $featured_podcasts['title']; ?></h3>
