@@ -367,19 +367,28 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 .rounded-lg {
   border-radius: 0.5rem !important; }
 
-figure.rounded {
+.wp-block-image.rounded,
+.wp-block-embed.rounded {
   border-radius: none !important; }
-  figure.rounded img, figure.rounded iframe {
+  .wp-block-image.rounded img, .wp-block-image.rounded iframe,
+  .wp-block-embed.rounded img,
+  .wp-block-embed.rounded iframe {
     border-radius: 0.3rem !important; }
 
-figure.rounded-sm {
+.wp-block-image.rounded-sm,
+.wp-block-embed.rounded-sm {
   border-radius: none !important; }
-  figure.rounded-sm img, figure.rounded-sm iframe {
+  .wp-block-image.rounded-sm img, .wp-block-image.rounded-sm iframe,
+  .wp-block-embed.rounded-sm img,
+  .wp-block-embed.rounded-sm iframe {
     border-radius: 0.2rem !important; }
 
-figure.rounded-lg {
+.wp-block-image.rounded-lg,
+.wp-block-embed.rounded-lg {
   border-radius: none !important; }
-  figure.rounded-lg img, figure.rounded-lg iframe {
+  .wp-block-image.rounded-lg img, .wp-block-image.rounded-lg iframe,
+  .wp-block-embed.rounded-lg img,
+  .wp-block-embed.rounded-lg iframe {
     border-radius: 0.5rem !important; }
 
 .shadow {
@@ -391,19 +400,28 @@ figure.rounded-lg {
 .shadow-lg {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; }
 
-figure.shadow {
+.wp-block-image.shadow,
+.wp-block-embed.shadow {
   box-shadow: none !important; }
-  figure.shadow img, figure.shadow iframe {
+  .wp-block-image.shadow img, .wp-block-image.shadow iframe,
+  .wp-block-embed.shadow img,
+  .wp-block-embed.shadow iframe {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
 
-figure.shadow-sm {
+.wp-block-image.shadow-sm,
+.wp-block-embed.shadow-sm {
   box-shadow: none !important; }
-  figure.shadow-sm img, figure.shadow-sm iframe {
+  .wp-block-image.shadow-sm img, .wp-block-image.shadow-sm iframe,
+  .wp-block-embed.shadow-sm img,
+  .wp-block-embed.shadow-sm iframe {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
 
-figure.shadow-lg {
+.wp-block-image.shadow-lg,
+.wp-block-embed.shadow-lg {
   box-shadow: none !important; }
-  figure.shadow-lg img, figure.shadow-lg iframe {
+  .wp-block-image.shadow-lg img, .wp-block-image.shadow-lg iframe,
+  .wp-block-embed.shadow-lg img,
+  .wp-block-embed.shadow-lg iframe {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; }
 
 .p0 {
