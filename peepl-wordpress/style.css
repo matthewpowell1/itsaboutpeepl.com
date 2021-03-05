@@ -165,7 +165,9 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
   --font-headings: "Montserrat", Arial, sans-serif;
   --heading--font-weight: 600;
   --heading--font-weight-page-title: 600;
-  --heading--font-weight-strong: 600; }
+  --heading--font-weight-strong: 600;
+  --global--font-size-xxl: 2.5rem !important;
+  --global--font-size--xxxl: 3.5rem !important; }
   @media only screen and (min-width: 652px) {
     :root {
       --global--font-size-xxl: 4rem !important;
@@ -173,6 +175,9 @@ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, 
 
 .wp-block.editor-post-title__block .editor-post-title__input {
   color: var(--global--color-primary); }
+
+.wp-block-cover .wp-block-cover__inner-container, .wp-block-cover-image .wp-block-cover__inner-container {
+  width: auto; }
 
 :root {
   --button--color-background: var(--global--color-red);
