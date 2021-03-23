@@ -12,7 +12,7 @@ visibility: hidden;
 }</style>
 
 <div class="wp-block-cover alignfull has-background-dim has-background-gradient has-red-to-orange-gradient-background " style="min-height:400px;">
-    <div class="">
+    <div style="max-width: 80%;">
         <h2 class="alignfull has-text-align-center has-huge-font-size" style="color:white;"><?php the_field('header'); ?></h2>
     </div> 
 </div>
@@ -23,7 +23,10 @@ if ( $featured_restaurant['title'] ): ?>
     <div class="wp-block-group alignwide my-0 " style="padding-top:60px; padding-bottom: 60px;">
         <div class="wp-block-group__inner-container">
                 <h3 class="has-text-align-center"><?php echo $featured_restaurant['title'] ?></h3>
-                <?php echo $featured_restaurant['audio'] ?>
+                <?php echo $featured_restaurant['soundcloud_audio'] ?>
+                <audio controls style="width:100%;">
+                    <source src="<?php echo $featured_restaurant['audio'] ?>" type="audio/mpeg">
+                </audio>
                 <p class="has-text-align-center"><?php echo $featured_restaurant['description'] ?></p>
         </div>
     </div>
@@ -31,7 +34,7 @@ if ( $featured_restaurant['title'] ): ?>
 
 <?php 
 $featured_art = get_field('featured_art');
-if ( $featured_art['title'] ): ?>
+if ( $featured_art['image'] ): ?>
     <div class="wp-block-group alignfull is-style-default has-white-background-color has-background">
         <div class="wp-block-group__inner-container">
                 <figure class="wp-block-image size-full shadow-lg rounded">
