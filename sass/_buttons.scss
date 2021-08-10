@@ -40,5 +40,8 @@
                 border-color: var(--global--color-#{$slug}) !important;
             }
         }
+        .has-white-background-color:hover {
+            color: var(--global--color-black) !important;
+        }
     }
 }
