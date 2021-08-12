@@ -1,0 +1,46 @@
+---
+version: '3.7'
+
+services:
+  itsaboutpeepl_wordpress:
+    build: ./docker
+    ports:
+      - 7000:80
+    depends_on:
+      - itsaboutpeepl_db
+    environment:
+      WORDPRESS_DB_HOST: itsaboutpeepl_db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - itsaboutpeepl_wordpress:/var/www/html
+      - ./peepl-wordpress:/var/www/html/wp-content/themes/peepl-wordpress
+      - ./docker/custom.ini:/usr/local/etc/php/conf.d/custom.ini
+      - ./docker/shared:/shared/
+
+  itsaboutpeepl_db:
+    image: mariadb:10.4
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    volumes:
+      - itsaboutpeepl_db:/var/lib/mysql
+
+  itsaboutpeepl_phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 7001:80
+    environment:
+      PMA_HOST: itsaboutpeepl_db
+      PMA_USER: wordpress
+      PMA_PASSWORD: wordpress
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+
+volumes:
+  itsaboutpeepl_wordpress:
+  itsaboutpeepl_db:
