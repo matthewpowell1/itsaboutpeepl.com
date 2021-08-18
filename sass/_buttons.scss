@@ -6,6 +6,7 @@
 .wp-block-button:not(.is-style-outline) {
     .wp-block-button__link {
         border: none !important;
+        font-weight: bold;
         transition: box-shadow 100ms linear, transform 100ms linear;
 
         &:hover {
@@ -22,6 +23,9 @@
             &.has-white-background-color.has-#{$slug}-color:hover {
                 color: var(--global--color-#{$slug}) !important;
             }
+            &.has-white-color.has-#{$slug}-gradient-background.has-text-color.has-background:hover {
+                color: var(--global--color-cream) !important;
+            }
         }
 
         @each $slug, $background in $peepl-gradients {
@@ -34,14 +38,19 @@
 
 .wp-block-button.is-style-outline {
     .wp-block-button__link {
+        font-weight: bold;
+        transition: 300ms;
         @each $slug, $color in $peepl-colors {
             &.has-#{$slug}-color:hover {
                 background-color: var(--global--color-#{$slug}) !important;
                 border-color: var(--global--color-#{$slug}) !important;
             }
         }
-        .has-white-background-color:hover {
-            color: var(--global--color-black) !important;
+        &.has-white-color:hover {
+           color: var(--global--color-black) !important;
+        }
+        &.has-cream-color:hover {
+            color: var(--global--color-dark-grey) !important;
         }
     }
 }

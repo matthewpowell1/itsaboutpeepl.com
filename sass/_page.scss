@@ -41,7 +41,12 @@
     }
 
     @media (min-width: $screen-lg-min) {
-        padding: calc(2 * var(--global--spacing-vertical)) 0 !important;
+        padding: calc(2.5 * var(--global--spacing-vertical)) 0 !important;
+    }
+}
+.wp-block-columns > .wp-block-column {
+    @media (min-width: $screen-md-min) {
+        margin-top: calc(1.5 * var(--global--spacing-vertical)) !important;
     }
 }
 

@@ -1,6 +1,6 @@
 :root {
     --branding--logo--max-width: 256px;
-    --branding--logo--max-height: 80px;
+    --branding--logo--max-height: 64px;
     --branding--logo--max-width-mobile: 64px;
     --branding--logo--max-height-mobile: 64px;
 
@@ -17,8 +17,8 @@
     padding-bottom: 0.5em !important;
 
     @media (min-width: $screen-sm-min) {
-        padding-top: var(--global--spacing-vertical) !important;
-        padding-bottom: var(--global--spacing-vertical) !important;
+        padding-top: 0.75em !important;
+        padding-bottom: 0.75em !important;
     }
 }
 
